@@ -6,7 +6,6 @@ import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
 
 import com.tarun.sms.entity.Company;
@@ -30,7 +29,6 @@ public class CompanyServiceImpl implements ICompanyService {
 
 	@Override
 	public List<Company> getAllCompany() {
-		Company company = new Company();
 		return companyRepository.findAll();
 	}
 
