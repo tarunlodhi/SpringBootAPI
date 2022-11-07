@@ -51,10 +51,6 @@ public class CompanyServiceImpl implements ICompanyService {
 
 	@Override
 	@Transactional
-	/**
-	 * @author tarlodhi
-	 * 
-	 */
 	public Company updateCompany(int id, Company company) {
 		Company updateCompany = companyRepository.findById(id).orElse(null);
 		if (updateCompany == null)

@@ -4,11 +4,6 @@ import java.util.List;
 
 import com.tarun.sms.entity.Company;
 
-/**
- * 
- * @author anaaugus2
- *
- */
 public interface ICompanyService {
 
 	List<Company> getAllCompany();
