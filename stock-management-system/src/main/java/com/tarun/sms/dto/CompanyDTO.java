@@ -9,6 +9,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Range;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.tarun.sms.entity.Directors;
 
@@ -17,6 +18,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
+@RestController
 public class CompanyDTO {
 
 	private Integer id;
